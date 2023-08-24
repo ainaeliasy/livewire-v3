@@ -4,6 +4,8 @@ Voici le text extraite:
 
 ===> {{$text}}
 
+===> {{ $availableLang }}
+
 
     <form wire:submit="save">
         @if ($photo) 
