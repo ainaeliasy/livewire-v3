@@ -4,10 +4,21 @@ Voici le text extraite:
 
 ===> {{$text}}
 
+===> {{ $availableLang }}
+
+
+<br>
+PHP {{ phpversion() }};
+<br>
+
+<center>
+    Here is the chatgpt result: {{ $mapping }}
+</center>
+
 
     <form wire:submit="save">
         @if ($photo) 
-        <img src="{{ $photo->temporaryUrl() }}">
+        <img class="max-h-90" src="{{ $photo->temporaryUrl() }}">
     @endif
         <input type="file" wire:model="photo">
      
