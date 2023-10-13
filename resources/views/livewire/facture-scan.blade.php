@@ -18,7 +18,7 @@ PHP {{ phpversion() }};
 
     <form wire:submit="save">
         @if ($photo) 
-        <img class="max-h-90" src="{{ $photo->temporaryUrl() }}">
+        <img style="max-height: 100rem" src="{{ $photo->temporaryUrl() }}">
     @endif
         <input type="file" wire:model="photo">
      
