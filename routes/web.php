@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Test;
 use App\Livewire\FactureScan;
 use Illuminate\Support\Facades\Route;
 
@@ -17,5 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/test', Test::class);
 
 Route::get('ocr', FactureScan::class);
